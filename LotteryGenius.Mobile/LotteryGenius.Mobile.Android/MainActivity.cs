@@ -6,19 +6,23 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using CarouselView.FormsPlugin.Android;
 
 namespace LotteryGenius.Mobile.Droid
 {
-    [Activity(Label = "LotteryGenius.Mobile", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "LotteryGenius.Mobile", Theme = "@style/MainTheme", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle bundle)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
-            base.OnCreate(savedInstanceState);
-            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            base.OnCreate(bundle);
+            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
+            global::Xamarin.Forms.Forms.Init(this, bundle);
+            Plugin.Iconize.Iconize.Init(Resource.Id.toolbar, Resource.Id.sliding_tabs);
+            CarouselViewRenderer.Init();
             LoadApplication(new App());
         }
     }

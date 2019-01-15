@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -49,19 +49,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Mobile.Client">
+      <Version>4.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Iconize">
+      <Version>3.4.0.103</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Iconize.FontAwesome">
+      <Version>3.4.0.103</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
-    <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2.1" />
-    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2.1" />
-    <PackageReference Include="Xamarin.Android.Support.v4" Version="27.0.2.1" />
-    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="27.0.2.1" />
-    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="27.0.2.1" />
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0" />
+    <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0" />
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="28.0.0" />
+    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="28.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashActivity.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\fa-brands-400.eot" />
+    <AndroidAsset Include="Assets\fa-brands-400.ttf" />
+    <AndroidAsset Include="Assets\fa-brands-400.woff" />
+    <AndroidAsset Include="Assets\fa-brands-400.woff2" />
+    <AndroidAsset Include="Assets\fa-regular-400.eot" />
+    <AndroidAsset Include="Assets\fa-regular-400.ttf" />
+    <AndroidAsset Include="Assets\fa-regular-400.woff" />
+    <AndroidAsset Include="Assets\fa-regular-400.woff2" />
+    <AndroidAsset Include="Assets\fa-solid-900.eot" />
+    <AndroidAsset Include="Assets\fa-solid-900.ttf" />
+    <AndroidAsset Include="Assets\fa-solid-900.woff" />
+    <AndroidAsset Include="Assets\fa-solid-900.woff2" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -85,7 +107,6 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\drawable\" />
     <Folder Include="Resources\drawable-hdpi\" />
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
@@ -97,5 +118,52 @@
       <Name>LotteryGenius.Mobile</Name>
     </ProjectReference>
   </ItemGroup>
- <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background_splash.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable\LotteryLogo.png" />
+    <AndroidResource Include="Resources\drawable\LotteryLogo3.png" />
+    <AndroidResource Include="Resources\drawable\MegaMillions_Logo.png" />
+    <AndroidResource Include="Resources\drawable\powerball_pp.png" />
+    <AndroidAsset Include="Assets\fa-brands-400.svg" />
+    <AndroidAsset Include="Assets\fa-regular-400.svg" />
+    <AndroidAsset Include="Assets\fa-solid-900.svg" />
+    <AndroidResource Include="Resources\mipmap-hdpi\home.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ticket.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\money.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\home.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\money.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ticket.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\home.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\money.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ticket.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\home.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\money.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ticket.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\home.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\money.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ticket.png" />
+    <AndroidResource Include="Resources\drawable\Home.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\Money.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\Ticket.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\LG_logo.png" />
+    <Content Include="values-v19\styles.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="values-v21\styles.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

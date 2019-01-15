@@ -3,12 +3,16 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+
 namespace LotteryGenius.Mobile
 {
     public partial class App : Application
     {
         public App()
         {
+            Plugin.Iconize.Iconize.With(new Plugin.Iconize.Fonts.FontAwesomeRegularModule())
+                .With(new Plugin.Iconize.Fonts.FontAwesomeBrandsModule());
+
             InitializeComponent();
 
             MainPage = new MainPage();

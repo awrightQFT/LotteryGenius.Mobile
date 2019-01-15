@@ -1,14 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:LotteryGenius.Mobile"
-             x:Class="LotteryGenius.Mobile.MainPage">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
-
-</ContentPage>
+             xmlns:local="clr-namespace:LotteryGenius.Mobile;assembly=LotteryGenius.Mobile"
+             xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
+             x:Class="LotteryGenius.Mobile.MainPage"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             android:TabbedPage.ToolbarPlacement="Bottom"
+             BarBackgroundColor="#85bb65"
+             BarTextColor="White"
+             android:TabbedPage.BarItemColor="#66FFFFFF"
+             android:TabbedPage.BarSelectedItemColor="White">
+    <local:HomePage Icon="Home" />
+    <local:WinnersPage Icon="Money" />
+    <local:PicksPage Icon="Ticket" />
+</TabbedPage>
