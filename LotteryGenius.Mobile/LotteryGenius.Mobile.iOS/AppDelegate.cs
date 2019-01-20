@@ -24,6 +24,7 @@ namespace LotteryGenius.Mobile.iOS
         {
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
             global::Xamarin.Forms.Forms.Init();
+            CarouselViewRenderer.Init();
             UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB(133, 187, 101);
             UITabBarItem.Appearance.SetTitleTextAttributes(
                 new UITextAttributes()
@@ -31,7 +32,7 @@ namespace LotteryGenius.Mobile.iOS
                     TextColor = UIColor.FromRGBA(255, 255, 255, 102)
                 },
                 UIControlState.Normal);
-            CarouselViewRenderer.Init();
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

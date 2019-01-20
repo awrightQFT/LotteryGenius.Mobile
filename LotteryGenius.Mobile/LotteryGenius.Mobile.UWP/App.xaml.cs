@@ -53,7 +53,6 @@ namespace LotteryGenius.Mobile.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
                 List<Assembly> assembliesToInclude = new List<Assembly>();
                 assembliesToInclude.Add(typeof(CarouselViewRenderer).GetTypeInfo().Assembly);
-
                 Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)

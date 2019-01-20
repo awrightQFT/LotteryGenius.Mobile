@@ -11,7 +11,7 @@ namespace LotteryGenius.Mobile.Droid
     using Android.Content;
     using Android.OS;
 
-    [Activity(Label = "SplashScreen", NoHistory = true, Icon = "@drawable/ic_launcher", Theme = "@style/Theme.Splash", MainLauncher = true)]
+    [Activity(Label = "Lottery Genius", NoHistory = true, Icon = "@drawable/lg_launcher", Theme = "@style/Theme.Splash", MainLauncher = true)]
     public class SplashActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)

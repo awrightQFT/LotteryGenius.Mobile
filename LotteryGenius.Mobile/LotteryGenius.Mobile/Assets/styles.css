@@ -1,0 +1,32 @@
+﻿.mini-circle {
+    display: block;
+    background: black;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    min-width: 50px;
+    min-height: 50px;
+    margin: 0;
+    background: radial-gradient(circle at 33px 33px, #ffffff, #686868);
+    font-size: 1vw;
+    text-align: center;
+    padding: 25% 0;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.mini-powerball-circle {
+    display: block;
+    background: black;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    min-height: 50px;
+    min-width: 50px;
+    margin: 0;
+    background: radial-gradient(circle at 33px 33px, #ff0000, #323232);
+    font-size: 1vw;
+    text-align: center;
+    color: #ffffff;
+    padding: 25% 0;
+    font-family: 'Permanent Marker', cursive;
+}

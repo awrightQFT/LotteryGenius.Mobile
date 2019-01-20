@@ -23,7 +23,7 @@
 	<key>MinimumOSVersion</key>
 	<string>8.0</string>
 	<key>CFBundleDisplayName</key>
-	<string>LotteryGenius.Mobile</string>
+	<string>LotteryGenius</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.companyname.LotteryGenius.Mobile</string>
 	<key>CFBundleVersion</key>
@@ -33,9 +33,13 @@
 	<key>CFBundleName</key>
 	<string>LotteryGenius.Mobile</string>
 	<key>UIAppFonts</key>
-	<array>    
-		<string>iconize-fontawesome-regular.ttf</string>    
-		<string>iconize-fontawesome-brands.ttf</string>    
+	<array>
+		<string>iconize-fontawesome-regular.ttf</string>
+		<string>iconize-fontawesome-brands.ttf</string>
 	</array>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcons.appiconset</string>
+	<key>XSLaunchImageAssets</key>
+	<string>Assets.xcassets/LaunchImage.launchimage</string>
 </dict>
 </plist>
