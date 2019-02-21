@@ -25,6 +25,9 @@ namespace LotteryGenius.Mobile.Droid
             Plugin.Iconize.Iconize.Init(Resource.Id.toolbar, Resource.Id.sliding_tabs);
 
             LoadApplication(new App());
+            //LoadApplication(UXDivers.Gorilla.Droid.Player.CreateApplication(this,
+            //    new UXDivers.Gorilla.Config("Good Gorilla")
+            //));
         }
     }
 }

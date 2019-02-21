@@ -60,7 +60,9 @@ namespace LotteryGenius.Mobile.ViewModels
                 jackpot = powerball.powerballJackpot,
                 next_draw_date = next_powerball.next_jackpot_date,
                 next_jackpot = next_powerball.next_jackpot,
-                game_image = "powerball_pp.png"
+                game_image = "powerball_pp.png",
+                bonus_image = "powerBall.png",
+                bonus_text_color = "White"
             };
 
             var m = new LotteryDraw()
@@ -77,7 +79,9 @@ namespace LotteryGenius.Mobile.ViewModels
                 jackpot = megamillion.megamillionJackpot,
                 next_draw_date = next_megamillion.next_jackpot_date,
                 next_jackpot = next_megamillion.next_jackpot,
-                game_image = "MegaMillions_Logo.png"
+                game_image = "MegaMillions_Logo.png",
+                bonus_image = "megaBall.png",
+                bonus_text_color = "Black"
             };
 
             MyItemsSource = new ObservableCollection<LotteryDraw>();

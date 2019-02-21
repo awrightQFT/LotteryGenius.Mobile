@@ -36,6 +36,9 @@
 	<array>
 		<string>iconize-fontawesome-regular.ttf</string>
 		<string>iconize-fontawesome-brands.ttf</string>
+		<string>Bangers-Regular.ttf</string>
+		<string>PermanentMarker-Regular.ttf</string>
+		<string>FrancoisOne-Regular.ttf</string>
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcons.appiconset</string>

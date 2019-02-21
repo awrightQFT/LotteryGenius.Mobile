@@ -1,0 +1,17 @@
+{
+  "WinnersPage.xaml":
+  {
+    "ItemsSource": [
+      {
+        "game": "Powerball",
+        "winners": [
+          {
+            "ball1": "02",
+            "ball2": "03" 
+          }
+        ]
+      
+      }
+    ]
+  }
+}

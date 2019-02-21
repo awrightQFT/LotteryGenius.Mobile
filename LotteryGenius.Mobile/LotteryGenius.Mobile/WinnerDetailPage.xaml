@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:system="clr-namespace:System;assembly=netstandard"
+             x:Class="LotteryGenius.Mobile.WinnerDetailPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    Android="20,20,20,20"
+                    iOS="20,20,20,20" />
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center">
+            <Grid HorizontalOptions="Start">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Aspect="AspectFit" HorizontalOptions="Fill" Source="normalBall.png" Grid.Row="0" Grid.Column="3" VerticalOptions="Center" />
+                <Label Text="{Binding ball1}"  Grid.Row="0" Grid.Column="3" TextColor="Black" FontFamily="{StaticResource PermanantMarker}" VerticalOptions="Center" HorizontalTextAlignment="Center">
+                    <Label.FontSize>
+                        <OnPlatform x:TypeArguments="system:Double"
+                                                                                iOS="13" />
+                    </Label.FontSize>
+                    <Label.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                                                                iOS="0,1,0,0"
+                                                                                Android="0,4,0,0" />
+                    </Label.Margin>
+                </Label>
+                <Image Source="normalBall.png" Grid.Row="0" Grid.Column="4" VerticalOptions="Center" />
+                <Label Text="{Binding ball2}" Grid.Row="0" Grid.Column="4" TextColor="Black" FontFamily="{StaticResource PermanantMarker}" VerticalOptions="Center" HorizontalTextAlignment="Center">
+                    <Label.FontSize>
+                        <OnPlatform x:TypeArguments="system:Double"
+                                                                                iOS="13" />
+                    </Label.FontSize>
+                    <Label.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                                                                iOS="0,1,0,0"
+                                                                                Android="0,4,0,0" />
+                    </Label.Margin>
+                </Label>
+                <Image Source="normalBall.png" Grid.Row="0" Grid.Column="5" VerticalOptions="Center" />
+                <Label Text="{Binding ball3}" Grid.Row="0" Grid.Column="5" TextColor="Black" FontFamily="{StaticResource PermanantMarker}" VerticalOptions="Center" HorizontalTextAlignment="Center">
+                    <Label.FontSize>
+                        <OnPlatform x:TypeArguments="system:Double"
+                                                                                iOS="13" />
+                    </Label.FontSize>
+                    <Label.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                                                                iOS="0,1,0,0"
+                                                                                Android="0,4,0,0" />
+                    </Label.Margin>
+                </Label>
+                <Image Source="normalBall.png" Grid.Row="0" Grid.Column="6" VerticalOptions="Center" />
+                <Label Text="{Binding ball4}" Grid.Row="0" Grid.Column="6" TextColor="Black" FontFamily="{StaticResource PermanantMarker}" VerticalOptions="Center" HorizontalTextAlignment="Center">
+                    <Label.FontSize>
+                        <OnPlatform x:TypeArguments="system:Double"
+                                                                                iOS="13" />
+                    </Label.FontSize>
+                    <Label.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                                                                iOS="0,1,0,0"
+                                                                                Android="0,4,0,0" />
+                    </Label.Margin>
+                </Label>
+                <Image Source="normalBall.png" Grid.Row="0" Grid.Column="7" VerticalOptions="Center" />
+                <Label Text="{Binding ball5}" Grid.Row="0" Grid.Column="7" TextColor="Black" FontFamily="{StaticResource PermanantMarker}" VerticalOptions="Center" HorizontalTextAlignment="Center">
+                    <Label.FontSize>
+                        <OnPlatform x:TypeArguments="system:Double"
+                                                                                iOS="13" />
+                    </Label.FontSize>
+                    <Label.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                                                                iOS="0,1,0,0"
+                                                                                Android="0,4,0,0" />
+                    </Label.Margin>
+                </Label>
+                <Image x:Name="bonus_image" Source="{Binding bonus_image}" Grid.Row="0" Grid.Column="8" VerticalOptions="Center" />
+                <Label Text="{Binding bonus_ball}" Grid.Row="0" Grid.Column="8" TextColor="{Binding bonus_text_color}" FontFamily="{StaticResource PermanantMarker}" VerticalOptions="Center" HorizontalTextAlignment="Center">
+                    <Label.FontSize>
+                        <OnPlatform x:TypeArguments="system:Double"
+                                                                                iOS="13" />
+                    </Label.FontSize>
+                    <Label.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                                                                iOS="0,1,0,0"
+                                                                                Android="0,4,0,0" />
+                    </Label.Margin>
+                </Label>
+            </Grid>
+
+            <Grid HorizontalOptions="CenterAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Aspect="AspectFit" HorizontalOptions="Fill" Source="normalBall.png" Grid.Row="0" Grid.Column="3" VerticalOptions="Center" />
+                <Label Text="{Binding ball1}"  Grid.Row="0" Grid.Column="3" TextColor="Black" FontFamily="{StaticResource PermanantMarker}" VerticalOptions="Center" HorizontalTextAlignment="Center">
+                    <Label.FontSize>
+                        <OnPlatform x:TypeArguments="system:Double"
+                                                                                iOS="13" />
+                    </Label.FontSize>
+                    <Label.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                                                                iOS="0,1,0,0"
+                                                                                Android="0,4,0,0" />
+                    </Label.Margin>
+                </Label>
+                <Image Source="normalBall.png" Grid.Row="0" Grid.Column="4" VerticalOptions="Center" />
+                <Label Text="{Binding ball2}" Grid.Row="0" Grid.Column="4" TextColor="Black" FontFamily="{StaticResource PermanantMarker}" VerticalOptions="Center" HorizontalTextAlignment="Center">
+                    <Label.FontSize>
+                        <OnPlatform x:TypeArguments="system:Double"
+                                                                                iOS="13" />
+                    </Label.FontSize>
+                    <Label.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                                                                iOS="0,1,0,0"
+                                                                                Android="0,4,0,0" />
+                    </Label.Margin>
+                </Label>
+                <Image Source="normalBall.png" Grid.Row="0" Grid.Column="5" VerticalOptions="Center" />
+                <Label Text="{Binding ball3}" Grid.Row="0" Grid.Column="5" TextColor="Black" FontFamily="{StaticResource PermanantMarker}" VerticalOptions="Center" HorizontalTextAlignment="Center">
+                    <Label.FontSize>
+                        <OnPlatform x:TypeArguments="system:Double"
+                                                                                iOS="13" />
+                    </Label.FontSize>
+                    <Label.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                                                                iOS="0,1,0,0"
+                                                                                Android="0,4,0,0" />
+                    </Label.Margin>
+                </Label>
+                <Image Source="normalBall.png" Grid.Row="0" Grid.Column="6" VerticalOptions="Center" />
+                <Label Text="{Binding ball4}" Grid.Row="0" Grid.Column="6" TextColor="Black" FontFamily="{StaticResource PermanantMarker}" VerticalOptions="Center" HorizontalTextAlignment="Center">
+                    <Label.FontSize>
+                        <OnPlatform x:TypeArguments="system:Double"
+                                                                                iOS="13" />
+                    </Label.FontSize>
+                    <Label.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                                                                iOS="0,1,0,0"
+                                                                                Android="0,4,0,0" />
+                    </Label.Margin>
+                </Label>
+                <Image Source="normalBall.png" Grid.Row="0" Grid.Column="7" VerticalOptions="Center" />
+                <Label Text="{Binding ball5}" Grid.Row="0" Grid.Column="7" TextColor="Black" FontFamily="{StaticResource PermanantMarker}" VerticalOptions="Center" HorizontalTextAlignment="Center">
+                    <Label.FontSize>
+                        <OnPlatform x:TypeArguments="system:Double"
+                                                                                iOS="13" />
+                    </Label.FontSize>
+                    <Label.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                                                                iOS="0,1,0,0"
+                                                                                Android="0,4,0,0" />
+                    </Label.Margin>
+                </Label>
+                <Image x:Name="BonusImage" Source="{Binding bonus_image}" Grid.Row="0" Grid.Column="8" VerticalOptions="Center" />
+                <Label Text="{Binding bonus_ball}" Grid.Row="0" Grid.Column="8" TextColor="{Binding bonus_text_color}" FontFamily="{StaticResource PermanantMarker}" VerticalOptions="Center" HorizontalTextAlignment="Center">
+                    <Label.FontSize>
+                        <OnPlatform x:TypeArguments="system:Double"
+                                                                                iOS="13" />
+                    </Label.FontSize>
+                    <Label.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                                                                iOS="0,1,0,0"
+                                                                                Android="0,4,0,0" />
+                    </Label.Margin>
+                </Label>
+            </Grid>
+
+            <Button x:Name="dimissButton" Text="Dismiss" Clicked="OnDismissButtonClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

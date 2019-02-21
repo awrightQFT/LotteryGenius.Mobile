@@ -35,6 +35,10 @@ namespace LotteryGenius.Mobile.iOS
 
             LoadApplication(new App());
 
+            //LoadApplication(UXDivers.Gorilla.iOS.Player.CreateApplication(
+            //    new UXDivers.Gorilla.Config("Good Gorilla")
+            //));
+
             return base.FinishedLaunching(app, options);
         }
     }

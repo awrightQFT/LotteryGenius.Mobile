@@ -3,5 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LotteryGenius.Mobile.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="NormalFont">
+                <On Platform="Android" Value="Bangers-Regular.ttf#Bangers" />
+                <On Platform="iOS" Value="Bangers-Regular" />
+                <On Platform="UWP" Value="/Assets/Bangers-Regular.ttf#Bangers" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="PermanantMarker">
+                <On Platform="Android" Value="PermanentMarker-Regular.ttf#PermanentMarker" />
+                <On Platform="iOS" Value="PermanentMarker-Regular" />
+                <On Platform="UWP" Value="/Assets/PermanentMarker-Regular.ttf#PermanentMarker" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="FrancoisOne">
+                <On Platform="Android" Value="FrancoisOne-Regular.ttf#FrancoisOne" />
+                <On Platform="iOS" Value="FrancoisOne-Regular" />
+                <On Platform="UWP" Value="/Assets/FrancoisOne-Regular.ttf#FrancoisOne-Regular" />
+            </OnPlatform>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
